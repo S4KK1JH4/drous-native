@@ -1,0 +1,8 @@
+{
+  "appId": "com.drous.app",
+  "appName": "DROUS",
+  "webDir": "www",
+  "server": {
+    "androidScheme": "https"
+  }
+}

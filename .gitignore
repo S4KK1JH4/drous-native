@@ -1,0 +1,8 @@
+node_modules/
+# iOS build artifacts (regenerated on the Mac)
+ios/App/Pods/
+ios/App/App/public/
+# Android project not needed for the iOS build (it lives on the Windows PC)
+android/
+.DS_Store
+*.log
