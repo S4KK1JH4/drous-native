@@ -72,6 +72,8 @@
 .card3d .face{ backface-visibility:hidden; -webkit-backface-visibility:hidden; }
 .card3d .back{ transform:rotateY(180deg); -webkit-transform:rotateY(180deg); }
 #qFront, #aBack{ overflow-wrap:anywhere; word-break:break-word; min-width:0; }
+  @supports(padding:max(0px)){ #phone > div:first-child{ padding-top:max(20px, env(safe-area-inset-top)); } }
+
 
   .tab-panel{ display:none; }
   .tab-panel.active{ display:block; animation: tabIn 260ms var(--ease-out) both; }
