@@ -66,11 +66,13 @@
     .phone{ min-height:880px; height:880px; border-radius:44px; box-shadow:0 40px 80px -30px rgba(20,12,60,.35), inset 0 0 0 8px #111; overflow-y:auto; }
   }
 
- .card3d{ perspective:1200px;-webkit- }
-  .card3d-inner{ transform-style:preserve-3d;-webkit-transform-style:preserve- transition: transform 520ms var(--ease-in-out); }
-  .card3d.is-flipped .card3d-inner{ transform:rotateY(180deg);-webkit-transform:rotateY(180deg); }
-  .card3d .face{ backface-visibility:hidden; -webkit-backface-visibility:hidden; }
-  .card3d .back{ transform:rotateY(180deg);-webkit-transform:rotateY(180deg);}
+.card3d{ perspective:1200px; -webkit-perspective:1200px; }
+.card3d-inner{ transform-style:preserve-3d; -webkit-transform-style:preserve-3d; transition: transform 520ms var(--ease-in-out); }
+.card3d.is-flipped .card3d-inner{ transform:rotateY(180deg); -webkit-transform:rotateY(180deg); }
+.card3d .face{ backface-visibility:hidden; -webkit-backface-visibility:hidden; }
+.card3d .back{ transform:rotateY(180deg); -webkit-transform:rotateY(180deg); }
+#qFront, #aBack{ overflow-wrap:anywhere; word-break:break-word; min-width:0; }
+
   .tab-panel{ display:none; }
   .tab-panel.active{ display:block; animation: tabIn 260ms var(--ease-out) both; }
   @keyframes tabIn{ from{ opacity:0; transform:translateY(6px) scale(.995); } to{ opacity:1; transform:none; } }
